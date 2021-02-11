@@ -179,7 +179,9 @@ form {
 }
 
 /* ---------------------------------ICON-------------------------------------- */
-
+.fa-chart-line{
+    padding-left: 150px;
+}
 .fa-child {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -300,6 +302,8 @@ section {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     margin-top: 165px;
+    padding-left: 15px;
+    margin-left: -5px;
 }
 
 .rating {
@@ -686,8 +690,9 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #F2F2F2;
-    height: 300px;
+    height: 200px;
     padding-left: 50px;
+    padding-top: 20px;
 }
 
 .content_footer {
