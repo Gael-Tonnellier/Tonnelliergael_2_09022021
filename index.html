@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/74fd30115e.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo/Reservia.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
 </head>
 
@@ -14,16 +15,14 @@
         <div class="logo">
             <img src="images/logo/Reservia.svg" alt="Reservia" />
         </div>
-        <div class="content_fixed">
-            <nav>
-                <ul>
-                    <li><a href="#content_hebergement" class="lien-nav">Hébergements</a></li>
-                    <li><a href="#content_activites" class="lien-nav">Activités</a></li>
-                </ul>
-            </nav>
-            <div class="subscribe">
-                <a href="#" class="lien-subscribe">S'inscrire</a>
-            </div>
+        <nav>
+            <ul>
+                <li><a href="#content_hebergement" class="lien-nav">Hébergements</a></li>
+                <li><a href="#content_activites" class="lien-nav">Activités</a></li>
+            </ul>
+        </nav>
+        <div class="subscribe">
+            <a href="#" class="lien-subscribe">S'inscrire</a>
         </div>
     </header>
     <div class="content_r-f">
@@ -34,7 +33,9 @@
                 <form method="post" action="traitement.php">
                     <i class="fas fa-map-marker-alt"></i>
                     <input type="search" name="lieu" id=lieu placeholder="Ex: Marseille" size="20" />
-                    <input type="submit" value="Réserver" id="button_research" />
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <input type="submit" media="" value="Réserver" id="button_research" />
+
                 </form>
             </div>
         </div>
@@ -217,54 +218,54 @@
     <div id="content_activites">
         <h2>Activités à Marseille</h2>
         <div class="content_box_activite">
-
-            <a href="#" id="image-vport">
-                <div class="box_activite">
+            <div class="box_activite">
+                <a href="#" id="image-vport">
                     <div class="description_activite_long">
                         <h3>Vieux port</h3>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
             <div class="flex_little_left">
-                <a href="#" id="image-fort">
-                    <div class="box_activite">
+                <div class="box_activite">
+                    <a href="#" id="image-fort">
                         <div class="description_activite_medium">
                             <h3>Fort de Pomègues</h3>
                         </div>
-                    </div>
-                </a>
-                <a href="#" id="image-iles">
-                    <div class="box_activite">
+                    </a>
+                </div>
+                <div class="box_activite">
+                    <a href="#" id="image-iles">
                         <div class="description_activite_short">
                             <h3>Îles du Frioul</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
             </div>
-            <a href="#" id="image-calanque">
-                <div class="box_activite">
+            <div class="box_activite">
+                <a href="#" id="image-calanque">
                     <div class="description_activite_long">
                         <h3>Parc National des calanques</h3>
-                    </div>
-                </div>
-            </a>
-            <div class="flex_little_right">
-                <a href="#" id="image-garde">
-                    <div class="box_activite">
-                        <div class="description_activite_short">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" id="image-parc">
-                    <div class="box_activite">
-                        <div class="description_activite_medium">
-                            <h3>Parc Longchamp</h3>
-                        </div>
                     </div>
                 </a>
             </div>
 
+            <div class="flex_little_right">
+                <div class="box_activite">
+                    <a href="#" id="image-garde">
+                        <div class="description_activite_short">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="box_activite">
+                    <a href="#" id="image-parc">
+                        <div class="description_activite_medium">
+                            <h3>Parc Longchamp</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
