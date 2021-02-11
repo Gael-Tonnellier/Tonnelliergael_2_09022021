@@ -682,28 +682,25 @@ aside h2 {
 
 footer {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #F2F2F2;
+    height: 300px;
+    padding-left: 50px;
 }
 
-.content_apropos {
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    margin-right: 50px;
-    margin-left: 50px;
+.content_footer {
+    padding-right: 400px;
 }
 
-
-
-/*
-.content_noshebergements{
-
+.content_footer ul li {
+    margin-top: 15px;
 }
-.content_assistance{
 
-}   
-
+.content_footer ul li:hover{
+    color:#0065fc;
+}
 
 /* ---------------------------------LIENS -------------------------------------*/
 
