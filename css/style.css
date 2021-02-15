@@ -446,14 +446,14 @@ aside h2 {
     border: white;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-left: 200px;
-    margin-top: 20px;
+    margin-left: 110%;
+    margin-top: 10%;
     height: 150px;
-    width: 170px;
+    width: 100%;
 }
 
 .rating-popular {
-    margin-top: 70px;
+    margin-top: 30%;
 }
 
 /* ---------------------------IMAGES-ASIDE-----------------------------------*/
@@ -525,24 +525,24 @@ aside h2 {
     width: 98%;
 }
 
-.flex_little_left {
+.flex_little {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 25%;
 }
-
-.flex_little_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .box_activite {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
     margin-bottom: 30px;
     width: 22.7%;
+}
+.box_activite_little{
+    display: flex;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .description_activite_long {
@@ -595,8 +595,8 @@ aside h2 {
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25.6em;
-    height: 26em;
+    width: 100%;
+    height: 90%;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 
@@ -613,8 +613,8 @@ aside h2 {
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25.6em;
-    height: 13.4em;
+    width: 100%;
+    height: 90%;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 
@@ -631,8 +631,8 @@ aside h2 {
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25.6em;
-    height: 8.6em;
+    width: 100%;
+    height: 90%;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 
@@ -648,8 +648,8 @@ aside h2 {
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25.6em;
-    height: 26em;
+    width: 100%;
+    height: 90%;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 
@@ -666,8 +666,8 @@ aside h2 {
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25.6em;
-    height: 8em;
+    width: 100%;
+    height: 90%;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 
@@ -684,8 +684,8 @@ aside h2 {
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25.6em;
-    height: 13.4em;
+    width: 100%;
+    height: 90%;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 
@@ -694,7 +694,7 @@ aside h2 {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     background-color: #F2F2F2;
     height: 200px;
@@ -703,7 +703,7 @@ footer {
 }
 
 .content_footer {
-    padding-right: 400px;
+    margin-right: auto;
 }
 
 .content_footer ul li {
@@ -779,29 +779,34 @@ footer {
         display: flex;
         flex-direction: column;
         padding-left: 0px;
+        width: 100%;
         
     }
     .logo{
-        padding-left: 15px;
-        padding-top: 30px;
+        padding-left: 5%;
+        padding-top: 7%;
+        width: 100%;
     }
     nav{
         margin-left: 0px;
-        width: 375px;
+        width: 100%;
+        
     }
     nav ul {
         display: flex;
+        width: 100%;
         padding-left: 0px;
+        margin: 0px;
     }
     .lien-nav {
+        display: block;
         text-decoration: none;
         color: black;
-        padding-left: 40px;
-        padding-right: 60px;
         background-color: white;
         padding-top: 0px;
         border-bottom: #F2F2F2 solid 2px;
         padding-bottom: 20px;
+        width: 100%;
     }
     .lien-nav:hover {
         color: #0065FC;
@@ -812,8 +817,8 @@ footer {
     }
     .subscribe{
         position: fixed;
-        top: 45px;
-        left:250px;
+        top: 5.5%;
+        left:42%;
     }
 /*---------------RESEARCH-mobile---------------------------*/
     .content_r-f{
@@ -849,27 +854,23 @@ footer {
     section{
         display: flex;
         flex-direction: column-reverse;
-        margin: -10px;
-        width: max-content;
         margin: auto;
         background-color: #F2F2F2;
     }
     aside{
-        max-width: max-content;
+        width: 100%;
         margin: auto;
     }
-    aside h2{
-    padding-left: 0px;
-    }
     .fa-chart-line{
-    padding-left: 70px;
+    padding-left: 10%;
     }
     .content_box_popular{
-    max-width: max-content;
+    width: 100%;
     flex-direction: column;
     }
     .description_popular{
-    margin-left: 150px;
+        width: 50%;
+    margin-left: 50%;
     margin-top: 0px;
     padding-bottom: 50px;
     border: white solid 5px;
@@ -889,12 +890,12 @@ footer {
     }
     .box_popular{
     flex-direction: row;
-    width:auto;
+    width:90%;
     margin: auto;
     }
 
     #image-matin,#image-eau,#image-bleublanc{
-        width: auto;
+        width: 100%;
         border-radius: 30px;
     }
     #image-eau{
@@ -907,7 +908,7 @@ footer {
     /* Hebergement */
 
     #content_hebergement{
-    width: 375px;
+    width: 100%;
     background-color: white;
     border-radius: 0px;
     }
@@ -916,13 +917,13 @@ footer {
     padding-left: 0px;
     }
     .content_box_hebergement{
-    width: 370px;
+    width: 100%;
     flex-direction: column;
     padding: 0px;
     margin: auto;
     }
     .box_hebergement{
-    width: 330px;
+        width: 90%;
     margin: auto;
     margin-top: 20px;
     }
@@ -933,28 +934,32 @@ footer {
 
     /* ------------------------ACTIVITES MOBILE ---------------------*/
     #content_activites{
-        height: 2030px;
-        margin-top: 40px;
-        margin-left:25px;
+        height: 2200px;
+        
     }
-
-    .box_activite{
+    .box_activite_little{
+        margin-bottom: 100px;
+    }
+    .box_activite , .flex_little{
         margin-bottom: 70px;
-        width: max-content;
+        width: 90%;
     }
     .content_box_activite{
     flex-direction: column;
-    width: max-content;
+    width: 100%;
     margin: auto;
     }
-
+    
     .description_activite_long, .description_activite_medium,.description_activite_short{
         margin-top: 250px;
     }
     #image-vport, #image-fort,#image-iles,#image-calanque,#image-garde,#image-parc {
         height: 250px;
-        width: 320px;
+        width: 100%;
         box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
+    }
+    #image-fort{
+        background-position-y: -100px;
     }
     #image-iles{
         background-position-y: center;
