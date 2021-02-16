@@ -108,31 +108,40 @@ form {
 .content_filter {
     display: flex;
     flex-direction: column;
+    
 }
 .filtres {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
+    vertical-align: middle;
     margin-top: 10px;
     font-weight: bolder;
     margin-right: 20px;
+}
+@media screen and (max-width: 950px) {
+    .filtres{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 .filtres ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-items: baseline;
     width: 100%;
     margin-left: 20px;
 }
 .filtres ul li {
     display: flex;
+    justify-content: space-between;
+    margin-right: 2vh;
     align-items: center;
     border: #F2F2F2 solid 3px;
     border-radius: 35px;
     padding: 0px;
-    margin-right: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 1vh;
 }
 .filtres ul li p {
     margin-left: 10px;
