@@ -38,7 +38,7 @@ header {
     position: fixed;
     background: white;
     padding-left: 50px;
-    padding-right: 200px;
+    padding-right:13vh;
     width: 90%;
 }
 .logo {
@@ -213,7 +213,7 @@ form {
     margin-left: -1px;
 }
 .fa-info {
-    display: inline;
+    display: inline !important;
     color: #0065fc;
     margin-right: 12px;
     width: 10px;
@@ -269,7 +269,7 @@ section {
     border-radius: 30px;
     margin-bottom: 30px;
     width: 30%;
-    min-width: 117px;
+    min-width: 226px;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
 }
 .description_hebergement {
@@ -478,7 +478,7 @@ aside h2 {
 footer {
     
     background-color: #F2F2F2;
-    height: 200px;
+    height: max-content;
     width: 100%;
 }
 .content_footer{
@@ -529,8 +529,7 @@ footer {
 .lien-nav {
     text-decoration: none;
     color: black;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 4.2vh;
 }
 .lien-nav:hover {
     color: #0065FC;
@@ -548,15 +547,14 @@ footer {
 /*-----------------RESPONSIVE-MOBILE----------------------------*/
 @media screen and (max-width: 480px)
 { 
-    html{
-        overflow:auto;
-    }
     /* ----------HEADER-mobile--------*/
     header{
         display: flex;
         flex-direction: column;
         padding-left: 0px;
+        padding-right: 0px;
         width: 100%;
+        background-color: white;
         
     }
     .logo{
@@ -593,21 +591,40 @@ footer {
         padding-top: 0px;
     }
     .subscribe{
-        position: fixed;
-        top: 40px;
-        left:58%;
+        position: absolute;
+        padding-top: 11%;
+        padding-left: 40%;
     }
 /*---------------RESEARCH-mobile---------------------------*/
     .content_r-f{
         padding-top: 150px;
         margin-left: 15px;
         margin-right: 15px;
+        width: 80%;
     }
+
     #button_research{
         display: none;
     }
+    form{
+        border:#F2F2F2 solid 1px ;
+        border-radius: 12px;
+    }
     .fa-search{
         display: flex !important;
+        justify-self: center;
+        padding-top: 20px;
+    }
+    .fa-map-marker-alt{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #lieu{
+        border: none;
+        padding: 10px;
+    }
+    .content_filter{
+        width: 100%;
     }
     .filtres{
         flex-direction: column;
@@ -617,8 +634,8 @@ footer {
     }
     .filtres ul{
         flex-wrap: wrap;
-        width: 345px;
-        height: 200px;
+        width: 100%;
+        height: 250px;
         margin: 0px;
         margin-top: 5px;
     }
@@ -637,48 +654,18 @@ footer {
         width: 100%;
         margin: auto;
     }
+    aside h2{
+        padding-left: 20px;
+    }
     .fa-chart-line{
-    padding-left: 10%;
+        padding-left: 12vh;
     }
     .content_box_popular{
-    width: 100%;
-    flex-direction: column;
-    }
-    .description_popular{
-        width: 50%;
-    margin-left: 50%;
-    margin-top: 0px;
-    padding-bottom: 50px;
-    border: white solid 5px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    }
-    .description_popular h3{
-    margin-top: 20px;
-    margin-left: 10px;
-    }
-    .description_popular p {
-    margin-left: 10px;
-    
-    }
-    .rating-popular{
-    margin-left: 10px;
+        width: 100%;
+        margin: auto;
     }
     .box_popular{
-    flex-direction: row;
-    width:90%;
-    margin: auto;
-    }
-    #image-matin,#image-eau,#image-bleublanc{
-        width: 100%;
-        border-radius: 30px;
-    }
-    #image-eau{
-        background-position-x: -50px;
-    }
-    #image-bleublanc{
-        background-position-y: -150px;
-        background-position-x: -150px;
+        width: 90%;
     }
     /* Hebergement */
     #content_hebergement{
@@ -687,11 +674,11 @@ footer {
     border-radius: 0px;
     }
     #content_hebergement h2 {
-    margin-left: 20px;
-    padding-left: 0px;
+        padding-left: 20px;
+        width: 90%;
     }
     .content_box_hebergement{
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     padding: 0px;
     margin: auto;
@@ -707,53 +694,33 @@ footer {
     }
     /* ------------------------ACTIVITES MOBILE ---------------------*/
     #content_activites{
-        height: 2200px;
-        
+        height: fit-content; 
     }
-    .box_activite_little{
-        margin-bottom: 100px;
+    .description_activite{
+        margin-bottom: 20px;
     }
-    .box_activite , .flex_little{
-        margin-bottom: 70px;
+    .box_activite, .flex_little{
         width: 90%;
+        margin: auto;
     }
     .content_box_activite{
     flex-direction: column;
     width: 100%;
     margin: auto;
     }
-    .description_activite_long, .description_activite_medium,.description_activite_short{
-        margin-top: 250px;
-    }
     #image-vport, #image-fort,#image-iles,#image-calanque,#image-garde,#image-parc {
         height: 250px;
-        width: 100%;
-        box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.096);
     }
-    #image-fort{
-        background-position-y: -100px;
-    }
-    #image-iles{
-        background-position-y: center;
-    }
-    #image-calanque{
-        background-position-x: 0px;
-    }
-    #image-garde{
-        background-position-y: 0px;
-    }
-    #image-parc{
-        background-position-y: center;
-    }
+    
     /*----------------------APROPOS-MOBILE---------------------------------*/
     footer{
-        flex-direction: column;
-        height: 600px;
-        padding-left: 20px;
+        width: 100%;
+        height: max-content;
     }
     .content_footer{
-        padding-right: 0px;
-        padding-bottom: 20px;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 10px;
     }
 
 }
@@ -766,19 +733,39 @@ footer {
     #content_hebergement{
         width: 100%;
     }
+    .content_box_hebergement{
+        justify-content: space-around;
+    }
     aside{
         width: 100%;
         background-color: white;
+        margin-bottom: 5vh;
     }
-    #image-matin{
-        background-position-x: -20px;
+    .fa-chart-line{
+        padding-left: 30.5vh;
     }
-    #image-bleublanc{
-        background-position-y: -150px;
+    #content_activites{
+        height: fit-content; 
+    }
+    .description_activite{
+        margin-bottom: 20px;
+    }
+    .box_activite, .flex_little{
+        width: 25%;
+        margin: auto;
     }
     .content_box_activite{
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    margin: auto;
+    }
+    #image-fort,#image-iles,#image-garde,#image-parc {
+        height: 250px;
+    }
+    #image-vport,#image-calanque{
+        height: 500px;
     }
 }
