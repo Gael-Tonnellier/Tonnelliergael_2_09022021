@@ -170,9 +170,6 @@ form {
   background-color: #0065fc;
   border-radius: 12px;
 }
-.fa-chart-line {
-  padding-left: 16vh;
-}
 .fa-child {
   color: #0065fc;
   background-color: #deebff;
@@ -332,8 +329,11 @@ aside {
   min-width: 275px;
 }
 aside h2 {
+  display: flex;
+  justify-content: space-between;
   padding-left: 40px;
   padding-top: 20px;
+  width: 80%;
 }
 .content_box_popular {
   display: flex;
@@ -663,9 +663,6 @@ footer {
   aside h2 {
     padding-left: 20px;
   }
-  .fa-chart-line {
-    padding-left: 12vh;
-  }
   .content_box_popular {
     width: 100%;
     margin: auto;
@@ -750,9 +747,6 @@ footer {
     width: 100%;
     background-color: white;
     margin-bottom: 5vh;
-  }
-  .fa-chart-line {
-    padding-left: 30.5vh;
   }
   #content_activites {
     height: fit-content;
