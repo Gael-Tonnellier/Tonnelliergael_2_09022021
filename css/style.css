@@ -3,10 +3,10 @@
 
 html {
   font-family: "Raleway", sans-serif;
-  --main-color:#0065fc;
-  --second-color:#deebff;
-  --main-bg-color:white;
-  --second-bg-color:#f2f2f2;
+  --main-color: #0065fc;
+  --second-color: #deebff;
+  --main-bg-color: white;
+  --second-bg-color: #f2f2f2;
 }
 body {
   margin: 0;
@@ -91,11 +91,11 @@ form {
 #button_research {
   display: flex;
   padding: 19px;
-  background-color:var(--main-color);
+  background-color: var(--main-color);
   border: none;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  color:var(--main-bg-color);
+  color: var(--main-bg-color);
   font-weight: bolder;
   font-size: medium;
   cursor: pointer;
@@ -142,7 +142,7 @@ form {
   justify-content: space-between;
   margin-right: 2vh;
   align-items: center;
-  border:var(--second-bg-color) solid 3px;
+  border: var(--second-bg-color) solid 3px;
   border-radius: 35px;
   padding: 0px;
   margin-bottom: 1vh;
@@ -514,7 +514,6 @@ footer {
 .lien-carte {
   text-decoration: none;
   text-transform: none;
-  
 }
 .lien-gris {
   text-decoration: none;
@@ -537,7 +536,7 @@ footer {
 }
 .lien-nav {
   text-decoration: none;
-  padding: 4.2vh;
+  padding:2vw;
 }
 .lien-nav:hover {
   color: var(--main-color);
@@ -568,22 +567,25 @@ footer {
     width: 100%;
   }
   nav {
+    display: flex;
     margin-left: 0px;
     width: 100%;
   }
   nav ul {
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding-left: 0px;
     margin: 0px;
   }
   .lien-nav {
-    display: block;
+    display: flex;
     text-decoration: none;
     background-color: var(--main-bg-color);
     padding-top: 0px;
     border-bottom: var(--second-bg-color) solid 2px;
     padding-bottom: 20px;
+    padding:10vw;
     width: 100%;
   }
   .lien-nav:hover {
@@ -595,8 +597,8 @@ footer {
   }
   .subscribe {
     position: absolute;
-    padding-top: 11%;
-    padding-left: 40%;
+    top: 2.3rem;
+    left: 13rem;
   }
   /*---------------RESEARCH-mobile---------------------------*/
   .content_r-f {
