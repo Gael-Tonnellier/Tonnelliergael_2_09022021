@@ -584,7 +584,6 @@ footer {
     background-color: var(--main-bg-color);
     padding-top: 0px;
     border-bottom: var(--second-bg-color) solid 2px;
-    padding-bottom: 20px;
     padding:10vw;
     width: 100%;
   }
@@ -592,13 +591,12 @@ footer {
     color: var(--main-color);
     border-bottom: var(--main-color) solid 2px;
     border-top: hidden;
-    padding-bottom: 20px;
-    padding-top: 0px;
+    padding: 10vw;
   }
   .subscribe {
     position: absolute;
     top: 2.3rem;
-    left: 13rem;
+    right: 2rem;
   }
   /*---------------RESEARCH-mobile---------------------------*/
   .content_r-f {
