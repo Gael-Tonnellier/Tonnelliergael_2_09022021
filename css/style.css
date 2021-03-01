@@ -71,6 +71,9 @@ nav ul {
   margin-right: 50px;
   margin-left: 50px;
 }
+.content_research{
+  margin-top: 9vh;
+}
 .content_research p {
   margin-top: 15px;
   margin-bottom: 25px;
@@ -577,6 +580,9 @@ footer {
     width: 100%;
     padding-left: 0px;
     margin: 0px;
+  }
+  nav ul li{
+    width: 50%;
   }
   .lien-nav {
     display: flex;
